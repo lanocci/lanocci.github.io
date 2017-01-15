@@ -29,9 +29,9 @@
 <p><a href="http://qiita.com/gooichi/items/2b185dbdf24166a15ca4">emacs + marked2 で markdown</a>
 -&gt; これだけだとコマンドがみつからないので、<a href="http://moonstruckdrops.github.io/blog/2013/03/24/markdown-mode/">この</a>通りパスを通す設定を入れる</p>
 
-<p><a href="(http://yasuyk.github.io/blog/2013/01/16/emacs-marked/)">これ</a>でもOK
-<code>
-(defun markdown-preview-file ()
+<p><a href="(http://yasuyk.github.io/blog/2013/01/16/emacs-marked/)">これ</a>でもOK</p>
+
+<pre><code>(defun markdown-preview-file ()
   &quot;run Marked on the current file and revert the buffer&quot;
   (interactive)
   (shell-command
@@ -39,7 +39,7 @@
        (shell-quote-argument (buffer-file-name))))
 )
 (global-set-key &quot;\C-cm&quot; 'markdown-preview-file)
-</code></p>
+</code></pre>
 
 <p>-&gt; Ctrl + c , mでmarked2起動</p>
 
