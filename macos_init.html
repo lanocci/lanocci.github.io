@@ -11,7 +11,46 @@
 
 <body>
 
-/bin/bash: markdown: command not found
+<h1 id="macbookpro13late2016購入後にやったこと">MacBook Pro 13&quot; Late 2016 購入後にやったこと</h1>
+
+<h2 id="homebrew"><a href="http://qiita.com/b4b4r07/items/6efebc2f3d1cbbd393fc">Homebrew</a></h2>
+
+<h2 id="bettertouchtool">Better Touch Tool</h2>
+
+<h2 id="emacs">Emacs</h2>
+
+<ul>
+<li>howm のインストールがうまくいかない。 -&gt; うまくいった</li>
+<li><code>~/.emacs.d/</code> ディレクトリの下に<code>conf</code>ディレクトリを作成しないとassertion failedエラーが発生するので注意</li>
+</ul>
+
+<h2 id="marked2">marked2</h2>
+
+<p><a href="http://qiita.com/gooichi/items/2b185dbdf24166a15ca4">emacs + marked2 で markdown</a>
+-&gt; これだとコマンドがみつからないので、以下に変更 <a href="http://yasuyk.github.io/blog/2013/01/16/emacs-marked/">参考</a>
+<code>
+(defun markdown-preview-file ()
+  &quot;run Marked on the current file and revert the buffer&quot;
+  (interactive)
+  (shell-command
+   (format &quot;open -a /Applications/Marked.app %s&quot;
+       (shell-quote-argument (buffer-file-name))))
+)
+(global-set-key &quot;\C-cm&quot; 'markdown-preview-file)
+</code></p>
+
+<p>-&gt; Ctrl + c , mでmarked2起動</p>
+
+<h2 id=".bash_profile">~/.bash_profile</h2>
+
+<ul>
+<li>emacsのバージョンをCocoa emacsと揃える</li>
+<li><code>alias emacs=&quot;/Applications/Emacs.app/Contents/MacOS/Emacs -nw&quot;</code></li>
+<li>ターミナルのプロンプトを変更するために以下を追加 <a href="http://qiita.com/iwazer/items/5f57a80b8aac0f4e9839">参考</a></li>
+<li><code>export PS1='\W $ '</code></li>
+</ul>
+
+<h2 id="githubの設定"><a href="http://qiita.com/shizuma/items/2b2f873a0034839e47ce">githubの設定</a></h2>
 
 </body>
 </html>
