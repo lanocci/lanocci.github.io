@@ -1,10 +1,10 @@
 ---
 layout: post
-title:  'MacBook Pro 13" Late 2016 購入後にやったこと'
-date:   2017-03-20 06:56:38 +0900
+title:  '[備忘]MacBook Pro 13" Late 2016 購入後にやったこと'
+date:   2017-03-27 06:56:38 +0900
 categories: jekyll update
 ---
-# MacBook Pro 13" Late 2016 購入後にやったこと
+# [備忘]MacBook Pro 13" Late 2016 購入後にやったこと
 
 ## [Homebrew](http://qiita.com/b4b4r07/items/6efebc2f3d1cbbd393fc)
 
