@@ -1,0 +1,13 @@
+<h1 id="kubernetes-公式チュートリアルをローカル環境で進める上で詰まったこと">Kubernetes 公式チュートリアルをローカル環境で進める上で詰まったこと</h1>
+<p>interactive tutorialということでオンラインでコマンドラインツールを試すこともできるが、あえてローカルでやったときに詰まったところをメモ</p>
+
+<h2 id="module-2">Module 2</h2>
+
+<h3 id="step-23">Step 2/3</h3>
+
+<ul>
+  <li><code class="highlighter-rouge">kubectl run</code>するところでdockerhubからイメージを取ってくるが、dockerhubのurlが古いためか取ってこれない。</li>
+  <li>掲載されているコマンドの代わりに以下のコマンドを実行するとうまくいく</li>
+  <li><code class="highlighter-rouge">kubectl run kubernetes-bootcamp --image=jocatalin/kubernetes-bootcamp:v1 --port=8080</code></li>
+  <li>urlの<code class="highlighter-rouge">docker.io/</code>を削っただ201~け</li>
+</ul>
